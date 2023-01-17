@@ -1,5 +1,25 @@
-<script>
+ <img src="winky.gif" alt="description of image"> /*
+ <body>
 
-  
-  
-</script>
+ </body>
+ <script>
+   for (let i = 0; i < 100; i++) {
+   
+     
+     
+     
+     const gif = document.createElement('img')
+     gif.src = 'winky.gif'
+     console.log(gif)
+     gif.style.position = 'absolute'
+     gif.style.top = Math.random()*window.innerHeight + 'px'
+     gif.style.left = Math.random()*window.innerWidth + 'px'
+     document.body.appendChild(gif)
+   }
+
+
+
+
+
+   document.body.style.backgroundColor = 'red'
+ </script>
