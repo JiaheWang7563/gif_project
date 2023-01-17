@@ -1,20 +1,23 @@
- <img src="winky.gif" alt="description of image"> /*
+<!--  <img src="winky.gif" alt="description of image"> /* -->
  <body>
 
  </body>
  <script>
-   for (let i = 0; i < 100; i++) {
-   
-     
-     
-     
-     const gif = document.createElement('img')
+   function createGif(x,y){
+       const gif = document.createElement('img')
      gif.src = 'winky.gif'
      console.log(gif)
      gif.style.position = 'absolute'
-     gif.style.top = Math.random()*window.innerHeight + 'px'
-     gif.style.left = Math.random()*window.innerWidth + 'px'
-     document.body.appendChild(gif)
+     gif.style.top = y + 'px'
+     gif.style.left = x + 'px'
+     document.body.appendChild(gif)  
+   }
+
+  
+   
+   for (let i = 0; i < 100; i++) {
+  	     const x= i*250
+         createGif(x, 20)
    }
 
 
